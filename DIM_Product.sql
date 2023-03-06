@@ -1,6 +1,7 @@
 /****** Cleaning DIMProduct Table  ******/
-SELECT 
-  p.ProductKey AS ProductItemCode, 
+SELECT
+  p.ProductKey,
+  p.ProductAlternateKey AS ProductItemCode, 
   p.EnglishProductName AS [Product Name], 
   ps.EnglishProductSubcategoryName AS [Sub Category], 
   pc.EnglishProductCategoryName AS [Product Category], 
